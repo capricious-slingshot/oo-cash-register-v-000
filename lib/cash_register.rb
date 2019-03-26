@@ -12,7 +12,7 @@ class	CashRegister
   end
 
   def apply_discount
-    unless discount == 0 || nil
+    unless discount == 0 || discount == nil
       self.total -= self.total / (discount/1000)
     end
   end
