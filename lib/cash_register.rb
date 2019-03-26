@@ -12,6 +12,8 @@ class	CashRegister
   def add_item(title, price, quantity=1)
     self.total += price * quantity
     quantity.times {|x| self.items << title}
+    title = title.to_sym
+    self.transactions[title] = [price, quantity]
   end
 
   def apply_discount
