@@ -14,7 +14,7 @@ class	CashRegister
   def apply_discount
     unless discount == 0
       disc = discount/100
-      binding.pry
+      # binding.pry
       self.total = self.total * disc - 100
     end
   end
