@@ -15,7 +15,7 @@ class	CashRegister
     unless discount == 0
       disc = discount/100
       # binding.pry
-      self.total = self.total * disc - 100
+      self.total = self.total * disc
     end
   end
 end
