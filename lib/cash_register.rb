@@ -27,6 +27,8 @@ class	CashRegister
   end
 
   def void_last_transaction
-
+    item = self.transactions.keys.last
+    price = transactions[item][0]
+    quantity = transactions[item][1]
   end
 end
